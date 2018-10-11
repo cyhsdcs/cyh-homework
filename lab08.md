@@ -70,3 +70,15 @@
 | | 与Player和Fireball相撞，爆炸&销毁自己 |
 | | 飞出游戏布局，销毁自己 |
 
+| Object name | Fireball |
+| - | - |
+| Attributes | ![](http://thyrsi.com/t6/386/1539252592x1822611383.png) |
+| Collaborator | Events & Actions |
+| 精灵 | 笔直飞行 |
+| | 与Spaceship相撞，爆炸&销毁自己 |
+
+| Object name | Background |
+| - | - |
+| Attributes | ![](http://thyrsi.com/t6/386/1539260944x1822611431.png)
+| Collaborator | Events & Actions |
+| 背景 | 充当背景板 |
