@@ -32,3 +32,41 @@
 
 ##### 5. 游戏预览
 ![](http://thyrsi.com/t6/386/1539252050x-1376440138.gif)
+
+### 游戏设计小结
+
+#### CRC
+
+| Object name | Player |
+| - | - |
+| Attributes | ![](http://thyrsi.com/t6/386/1539252236x-1566688347.png) |
+| Collaborator | Events & Actions |
+| 精灵 | 键盘移动
+| | 点击鼠标左键发射火球
+| | 头朝鼠标
+| | Health = 5
+| | 与子弹相撞，扣一条命
+| | Health<=0，爆炸&销毁自己
+| | 与Spaceship相撞，爆炸&销毁自己
+
+| Object name | Spaceship |
+| - | - |
+| Attributes | ![](http://thyrsi.com/t6/386/1539252475x-1566688526.png) |
+| Collaborator | Events & Actions |
+| 精灵 | 时刻移动 |
+| | 方向朝着Player |
+| | Health = 5 |
+| | 每2.5秒发射子弹 |
+| | 与火球相撞，Health - 1 |
+| | 与其他Spaceship或Player相撞，爆炸&销毁自己 |
+| | Health <= 0，爆炸&销毁自己，分数 + 1 |
+| | 每3秒随机地方产生一个新的Spaceship |
+
+| Object name | Bullet |
+| - | - |
+| Attributes | ![](http://thyrsi.com/t6/386/1539252571x1822611383.png) |
+| Collaborator | Events & Actions |
+| 精灵 | 笔直飞行 |
+| | 与Player和Fireball相撞，爆炸&销毁自己 |
+| | 飞出游戏布局，销毁自己 |
+
