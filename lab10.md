@@ -1,9 +1,9 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 # 10-python编程实验报告
 
 ## 1. 选择2个高等数学上的作业，如泰勒分解、公式化简、解方程等。
 
-### 1) 求解$$ lim_{x→0}\ \frac{sin(2x^2)}{3x} $$
+### 1) 求解
+$$ lim_{x→0}\ \frac{sin(2x^2)}{3x} $$
 ### 2) 求函数$$e^xsinx\ \ \ \ (x^4)$$在x=0点的局部泰勒公式至所指定的阶数;
 ### 答：![](images\高数.png)
 
